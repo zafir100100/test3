@@ -18,13 +18,12 @@ export class UserTableService {
   constructor(private httpcall: HttpClient) { }
 
   IsUserNameExists(x: Input1) {
-    return this.httpcall.post(this.url+ 'IsUserNameExists', x, headerOption);
+    return this.httpcall.post(this.url + 'IsUserNameExists', x, headerOption);
   }
   IsEmailExists(x: Input2) {
-    return this.httpcall.post(this.url+ 'IsUserNameExists', x, headerOption);
+    return this.httpcall.post(this.url + 'IsEmailExists', x, headerOption);
   }
-  CreateUser(x: User)
-  {
+  CreateUser(x: User) {
     return this.httpcall.post('https://localhost:44388/api/Usertable1', x, headerOption);
   }
 }
