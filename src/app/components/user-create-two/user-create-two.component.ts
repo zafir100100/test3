@@ -14,7 +14,7 @@ import Swal from 'sweetalert2';
   styleUrls: ['./user-create-two.component.css']
 })
 export class UserCreateTwoComponent implements OnInit {
-  step: number = 2;
+  step: number = 1;
   title1: string = "1/3";
   subtitle1: string = "Please fill with your details";
   countryList: Country[] = [];
